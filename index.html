@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<!--
+Template Name: Midone - HTML Admin Dashboard Template
+Author: Left4code
+Website: http://www.left4code.com/
+Contact: muhammadrizki@left4code.com
+Purchase: https://themeforest.net/user/left4code/portfolio
+Renew Support: https://themeforest.net/user/left4code/portfolio
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<html lang="en">
+<!-- BEGIN: Head -->
+
+<head>
+	<meta charset="utf-8">
+	<link href="dist/images/logo.svg" rel="shortcut icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description"
+		content="Midone admin is super flexible, powerful, clean & modern responsive tailwind admin template with unlimited possibilities.">
+	<meta name="keywords"
+		content="admin template, Midone admin template, dashboard template, flat admin template, responsive admin template, web app">
+	<meta name="author" content="LEFT4CODE">
+	<title>Dashboard</title>
+	<!-- BEGIN: CSS Assets-->
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="dist/css/app.css" />
+	<!-- END: CSS Assets-->
+</head>
+<!-- END: Head -->
+
+<body class="app">
+	<!-- BEGIN: Mobile Menu -->
+	<div class="mobile-menu md:hidden">
+		<div class="mobile-menu-bar">
+			<a href="" class="flex mr-auto">
+				<img alt="Midone Tailwind HTML Admin Template" class="w-6" src="dist/images/logo.svg">
+			</a>
+			<div>11:56am</div>
+			<a href="javascript:;" id="mobile-menu-toggler"> <i data-feather="bar-chart-2"
+					class="w-8 h-8 text-white transform -rotate-90"></i> </a>
+		</div>
+		<ul class="border-t border-theme-24 py-5 hidden">
+			<li>
+				<a href="index.html" class="menu menu--active">
+					<div class="menu__icon"> <i data-feather="home"></i> </div>
+					<div class="menu__title"> Dashboard </div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- END: Mobile Menu -->
+	<div class="flex">
+		<!-- BEGIN: Side Menu -->
+		<nav class="side-nav">
+			<a href="" class="intro-x flex items-center pl-5 pt-4">
+				<img alt="Midone Tailwind HTML Admin Template" class="w-6" src="dist/images/logo.svg">
+				<span class="hidden xl:block text-white text-lg ml-3"> Hri<span class="font-medium">s</span> </span>
+			</a>
+			<div class="side-nav__devider my-6"></div>
+			<ul>
+				<li>
+					<a href="index.html" class="side-menu side-menu--active">
+						<div class="side-menu__icon"> <i data-feather="home"></i> </div>
+						<div class="side-menu__title"> Dashboard </div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="side-menu">
+						<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round" class="feather feather-box">
+								<path
+									d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+								</path>
+								<polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+								<line x1="12" y1="22.08" x2="12" y2="12"></line>
+							</svg> </div>
+						<div class="side-menu__title"> Employees <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round" class="feather feather-chevron-down side-menu__sub-icon">
+								<polyline points="6 9 12 15 18 9"></polyline>
+							</svg> </div>
+					</a>
+					<ul class="" style="display: none;">
+						<li>
+							<a href="./employees.html" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title"> All Employees</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title">Add Employees</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title">Employees Contract Update</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title">Job Management</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title">Employee Settings</div>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="side-menu">
+						<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round" class="feather feather-sliders mx-auto">
+								<line x1="4" y1="21" x2="4" y2="14"></line>
+								<line x1="4" y1="10" x2="4" y2="3"></line>
+								<line x1="12" y1="21" x2="12" y2="12"></line>
+								<line x1="12" y1="8" x2="12" y2="3"></line>
+								<line x1="20" y1="21" x2="20" y2="16"></line>
+								<line x1="20" y1="12" x2="20" y2="3"></line>
+								<line x1="1" y1="14" x2="7" y2="14"></line>
+								<line x1="9" y1="8" x2="15" y2="8"></line>
+								<line x1="17" y1="16" x2="23" y2="16"></line>
+							</svg> </div>
+						<div class="side-menu__title"> Requests <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round" class="feather feather-chevron-down side-menu__sub-icon">
+								<polyline points="6 9 12 15 18 9"></polyline>
+							</svg> </div>
+					</a>
+					<ul class="" style="display: none;">
+						<li>
+							<a href="./employees.html" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title"> Leave</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title">Loan</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title">Redeployment</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title">Reevaluation</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title">Exit</div>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="side-menu">
+						<div class="side-menu__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round" class="feather feather-clock mx-auto">
+								<circle cx="12" cy="12" r="10"></circle>
+								<polyline points="12 6 12 12 16 14"></polyline>
+							</svg> </div>
+						<div class="side-menu__title"> Time & Attendence <svg xmlns="http://www.w3.org/2000/svg" width="24"
+								height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+								stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down side-menu__sub-icon">
+								<polyline points="6 9 12 15 18 9"></polyline>
+							</svg> </div>
+					</a>
+					<ul class="" style="display: none;">
+						<li>
+							<a href="#" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title"> Absence</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title">Late</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title">Clock-In</div>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="side-menu">
+						<div class="side-menu__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round" class="feather feather-calendar mx-auto">
+								<rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+								<line x1="16" y1="2" x2="16" y2="6"></line>
+								<line x1="8" y1="2" x2="8" y2="6"></line>
+								<line x1="3" y1="10" x2="21" y2="10"></line>
+							</svg> </div>
+						<div class="side-menu__title"> Tasks <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round" class="feather feather-chevron-down side-menu__sub-icon">
+								<polyline points="6 9 12 15 18 9"></polyline>
+							</svg> </div>
+					</a>
+					<ul class="" style="display: none;">
+						<li>
+							<a href="#" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title"> All Tasks</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title"> Create Tasks</div>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="side-menu">
+						<div class="side-menu__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round" class="feather feather-credit-card mx-auto">
+								<rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+								<line x1="1" y1="10" x2="23" y2="10"></line>
+							</svg></div>
+						<div class="side-menu__title"> Payrolls <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round" class="feather feather-chevron-down side-menu__sub-icon">
+								<polyline points="6 9 12 15 18 9"></polyline>
+							</svg> </div>
+					</a>
+					<ul class="" style="display: none;">
+						<li>
+							<a href="./payroll.html" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title"> All Payrolls</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title"> Create Payroll</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title"> Settings</div>
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- END: Side Menu -->
+		<!-- BEGIN: Content -->
+		<div class="content">
+			<!-- BEGIN: Top Bar -->
+			<div class="top-bar">
+				<!-- BEGIN: Breadcrumb -->
+				<div class="-intro-x breadcrumb mr-auto hidden sm:flex"> <a href="" class="">Application</a> <i
+						data-feather="chevron-right" class="breadcrumb__icon"></i> <a href=""
+						class="breadcrumb--active">Dashboard</a> </div>
+				<!-- END: Breadcrumb -->
+
+				<!-- BEGIN: Notifications -->
+				<div class="intro-x dropdown relative mr-auto sm:mr-6">
+					<div class="dropdown-toggle notification notification--bullet cursor-pointer"> <i data-feather="bell"
+							class="notification__icon"></i> </div>
+					<div
+						class="notification-content dropdown-box mt-8 absolute top-0 left-0 sm:left-auto sm:right-0 z-20 -ml-10 sm:ml-0">
+						<div class="notification-content__box dropdown-box__content box">
+							<div class="notification-content__title">Notifications</div>
+							<div class="cursor-pointer relative flex items-center ">
+								<div class="w-12 h-12 flex-none image-fit mr-1">
+									<img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-13.jpg">
+									<div class="w-3 h-3 bg-theme-9 absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+								</div>
+								<div class="ml-2 overflow-hidden">
+									<div class="flex items-center">
+										<a href="javascript:;" class="font-medium truncate mr-5">Angelina Jolie</a>
+										<div class="text-xs text-gray-500 ml-auto whitespace-no-wrap">05:09 AM</div>
+									</div>
+									<div class="w-full truncate text-gray-600">Contrary to popular belief, Lorem Ipsum is not simply
+										random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 20
+									</div>
+								</div>
+							</div>
+							<div class="cursor-pointer relative flex items-center mt-5">
+								<div class="w-12 h-12 flex-none image-fit mr-1">
+									<img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-2.jpg">
+									<div class="w-3 h-3 bg-theme-9 absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+								</div>
+								<div class="ml-2 overflow-hidden">
+									<div class="flex items-center">
+										<a href="javascript:;" class="font-medium truncate mr-5">Johnny Depp</a>
+										<div class="text-xs text-gray-500 ml-auto whitespace-no-wrap">05:09 AM</div>
+									</div>
+									<div class="w-full truncate text-gray-600">It is a long established fact that a reader will be
+										distracted by the readable content of a page when looking at its layout. The point of using Lorem
+									</div>
+								</div>
+							</div>
+							<div class="cursor-pointer relative flex items-center mt-5">
+								<div class="w-12 h-12 flex-none image-fit mr-1">
+									<img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-14.jpg">
+									<div class="w-3 h-3 bg-theme-9 absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+								</div>
+								<div class="ml-2 overflow-hidden">
+									<div class="flex items-center">
+										<a href="javascript:;" class="font-medium truncate mr-5">Russell Crowe</a>
+										<div class="text-xs text-gray-500 ml-auto whitespace-no-wrap">01:10 PM</div>
+									</div>
+									<div class="w-full truncate text-gray-600">Contrary to popular belief, Lorem Ipsum is not simply
+										random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 20
+									</div>
+								</div>
+							</div>
+							<div class="cursor-pointer relative flex items-center mt-5">
+								<div class="w-12 h-12 flex-none image-fit mr-1">
+									<img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-6.jpg">
+									<div class="w-3 h-3 bg-theme-9 absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+								</div>
+								<div class="ml-2 overflow-hidden">
+									<div class="flex items-center">
+										<a href="javascript:;" class="font-medium truncate mr-5">Al Pacino</a>
+										<div class="text-xs text-gray-500 ml-auto whitespace-no-wrap">05:09 AM</div>
+									</div>
+									<div class="w-full truncate text-gray-600">There are many variations of passages of Lorem Ipsum
+										available, but the majority have suffered alteration in some form, by injected humour, or randomi
+									</div>
+								</div>
+							</div>
+							<div class="cursor-pointer relative flex items-center mt-5">
+								<div class="w-12 h-12 flex-none image-fit mr-1">
+									<img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-5.jpg">
+									<div class="w-3 h-3 bg-theme-9 absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+								</div>
+								<div class="ml-2 overflow-hidden">
+									<div class="flex items-center">
+										<a href="javascript:;" class="font-medium truncate mr-5">Edward Norton</a>
+										<div class="text-xs text-gray-500 ml-auto whitespace-no-wrap">01:10 PM</div>
+									</div>
+									<div class="w-full truncate text-gray-600">Lorem Ipsum is simply dummy text of the printing and
+										typesetting industry. Lorem Ipsum has been the industry&#039;s standard dummy text ever since the
+										1500</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END: Notifications -->
+				<!-- BEGIN: Account Menu -->
+				<div class="intro-x dropdown w-8 h-8 relative">
+					<div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in">
+						<img alt="Midone Tailwind HTML Admin Template" src="dist/images/profile-12.jpg">
+					</div>
+					<div class="dropdown-box mt-10 absolute w-56 top-0 right-0 z-20">
+						<div class="dropdown-box__content box bg-theme-38 text-white">
+							<div class="p-4 border-b border-theme-40">
+								<div class="font-medium">Angelina Jolie</div>
+								<div class="text-xs text-theme-41">Software Engineer</div>
+							</div>
+							<div class="p-2">
+								<a href=""
+									class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md">
+									<i data-feather="user" class="w-4 h-4 mr-2"></i> Profile </a>
+								<a href=""
+									class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md">
+									<i data-feather="edit" class="w-4 h-4 mr-2"></i> Add Account </a>
+								<a href=""
+									class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md">
+									<i data-feather="lock" class="w-4 h-4 mr-2"></i> Reset Password </a>
+								<a href=""
+									class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md">
+									<i data-feather="help-circle" class="w-4 h-4 mr-2"></i> Help </a>
+							</div>
+							<div class="p-2 border-t border-theme-40">
+								<a href=""
+									class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md">
+									<i data-feather="toggle-right" class="w-4 h-4 mr-2"></i> Logout </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END: Account Menu -->
+			</div>
+			<!-- END: Top Bar -->
+			<div class="grid grid-cols-12 gap-2">
+				<div class="col-span-12 grid grid-cols-12 gap-2">
+
+					<div class="col-span-12 grid grid-cols-12 gap-2">
+						<div class="col-span-12 md:col-span-8">
+							<div
+								class="col-span-12 md:col-span-6 xl:col-span-12 xxl:col-span-12 xl:col-start-1 xl:row-start-1 xxl:col-start-auto xxl:row-start-auto mt-3 box">
+								<div class="mt-5 intro-x p-5">
+									<div class="flex items-center h-10 mb-5">
+										<h2 class="truncate text-2xl mr-auto mb-3">Good afteroon, Johnny Joe!</h2>
+										<button data-carousel="important-notes" data-target="prev"
+											class="slick-navigator button px-2 border border-gray-400 flex rounded-full items-center text-gray-700 mr-2">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+												stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+												class="feather feather-plus mx-auto">
+												<line x1="12" y1="5" x2="12" y2="19"></line>
+												<line x1="5" y1="12" x2="19" y2="12"></line>
+											</svg>
+										</button>
+									</div>
+									<div class="flex items-center h-10">
+										<p class="text-sm truncate mr-auto ">
+											Important Notes
+										</p>
+										<button data-carousel="important-notes" data-target="prev"
+											class="slick-navigator button px-2 border border-gray-400 flex items-center text-gray-700 mr-2">
+											<i data-feather="chevron-left" class="w-4 h-4"></i> </button>
+										<button data-carousel="important-notes" data-target="next"
+											class="slick-navigator button px-2 border border-gray-400 flex items-center text-gray-700"> <i
+												data-feather="chevron-right" class="w-4 h-4"></i> </button>
+									</div>
+									<div class="slick-carousel" id="important-notes">
+										<div class="">
+											<div class="text-base font-medium truncate">Lorem Ipsum is simply dummy text</div>
+											<div class="text-gray-500 mt-1">20 Hours ago</div>
+											<div class="text-gray-600 text-justify mt-1">Lorem Ipsum is simply dummy text of the printing and
+												typesetting
+												industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+											<div class="font-medium flex mt-5">
+												<button type="button" class="button button--sm bg-gray-200 text-gray-600">View Notes</button>
+												<button type="button"
+													class="button button--sm border border-gray-300 text-gray-600 ml-auto">Dismiss</button>
+											</div>
+										</div>
+										<div class="">
+											<div class="font-medium truncate">Lorem Ipsum is simply dummy text</div>
+											<div class="text-gray-500 mt-1">20 Hours ago</div>
+											<div class="text-gray-600 text-justify mt-1">Lorem Ipsum is simply dummy text of the printing and
+												typesetting
+												industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+											<div class="font-medium flex mt-5">
+												<button type="button" class="button button--sm bg-gray-200 text-gray-600">View Notes</button>
+												<button type="button"
+													class="button button--sm border border-gray-300 text-gray-600 ml-auto">Dismiss</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-span-12">
+								<div class="intro-y box p-5 mt-12 sm:mt-5">
+									<div class="grid md:grid-cols-3 lg:grid-cols-3">
+										<div class="flex items-center flex-col">
+											<div class="text-lg font-bold">6790</div>
+											<div class="text-md text-gray-400">Employees</div>
+										</div>
+										<div class="flex items-center flex-col">
+											<div class="text-lg font-bold">6698</div>
+											<div class="text-md text-gray-400">Present</div>
+										</div>
+										<div class="flex items-center flex-col">
+											<div class="text-lg font-bold">8</div>
+											<div class="text-md text-gray-400">Late</div>
+
+										</div>
+										<div class="flex items-center flex-col">
+
+											<div class="text-lg font-bold">15</div>
+											<div class="text-md text-gray-400">Leave</div>
+
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-span-12 md:col-span-4">
+							<div class="mt-5">
+								<div class="intro-x box">
+									<div class="p-5 space-y-3">
+										<div class="intro-x flex items-center h-10 mb-5">
+											<h2 class="text-lg font-medium truncate mr-5">
+												Tasks
+											</h2>
+										</div>
+										<div class=" flex items-center">
+											<div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+												<img alt="Midone Tailwind HTML Admin Template" src="dist/images/profile-14.jpg">
+											</div>
+											<div class="ml-4 mr-auto">
+												<div class="font-medium text-gray-600  truncate">GENERAL</div>
+												<div class="text-ms text-black truncate">Fill up the personal details form</div>
+												<div class="text-xs text-gray-700 truncate">Assigned by Mark Jones</div>
+											</div>
+										</div>
+										<div class=" flex items-center">
+											<div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+												<img alt="Midone Tailwind HTML Admin Template" src="dist/images/profile-14.jpg">
+											</div>
+											<div class="ml-4 mr-auto">
+												<div class="font-medium text-gray-600 truncate">SIGN DOCUMENT</div>
+												<div class="text-md text-black truncate">Comfirm and sign company</div>
+												<div class="text-xs text-gray-700 truncate">Assigned by Katrin Persson</div>
+											</div>
+										</div>
+										<div class=" flex items-center">
+											<div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+												<img alt="Midone Tailwind HTML Admin Template" src="dist/images/profile-14.jpg">
+											</div>
+											<div class="ml-4 mr-auto">
+												<div class="font-medium text-gray-600 truncate">READ DOCUMENT</div>
+												<div class="text-md text-black">Read general company</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="mt-5">
+								<div class="intro-x box">
+									<div class="p-5 space-y-3">
+										<div class="intro-x flex items-center h-10 mb-5">
+											<h2 class="text-lg font-medium truncate mr-5">
+												New Applicants
+											</h2>
+										</div>
+										<div class=" flex items-center">
+											<div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+												<img alt="Midone Tailwind HTML Admin Template" src="dist/images/profile-14.jpg">
+											</div>
+											<div class="ml-4 mr-auto">
+												<div class="font-medium truncate">Samuel Jackson</div>
+												<div class="text-gray-600 text-xs truncate">Fullstack Developer</div>
+											</div>
+											<div class="text-sky-700">view profile</div>
+										</div>
+										<div class=" flex items-center">
+											<div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+												<img alt="Midone Tailwind HTML Admin Template" src="dist/images/profile-14.jpg">
+											</div>
+											<div class="ml-4 mr-auto">
+												<div class="font-medium truncate">Richard Henry</div>
+												<div class="text-gray-600 text-xs truncate">Project Manager</div>
+											</div>
+											<div class="text-sky-700">view profile</div>
+										</div>
+										<div class=" flex items-center">
+											<div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+												<img alt="Midone Tailwind HTML Admin Template" src="dist/images/profile-14.jpg">
+											</div>
+											<div class="ml-4 mr-auto">
+												<div class="font-medium">Leonardo DiCaprio</div>
+												<div class="text-gray-600 text-xs">Remote Developer</div>
+											</div>
+											<div class="text-sky-700">view profile</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-span-12">
+							<div class="intro-y box p-5 zoom-in mt-12 sm:mt-5">
+								<div class="grid md:grid-cols-3 lg:grid-cols-4 space-y-6">
+									<div class="flex items-center mt-6">
+										<div class="w-10 h-10 flex items-center bg-theme-18 rounded-md overflow-hidden">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+												stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+												class="feather feather-layers mx-auto">
+												<polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+												<polyline points="2 17 12 22 22 17"></polyline>
+												<polyline points="2 12 12 17 22 12"></polyline>
+											</svg>
+										</div>
+										<div class="ml-4 mr-auto">
+											<div class="text-theme-20 font-medium text-base mr-auto font-bold">Unit</div>
+											<div class="text-md text-gray-600">Backend Development</div>
+										</div>
+									</div>
+									<div class="flex items-center">
+										<div class="w-10 h-10 flex items-center bg-theme-12 text-white rounded-md overflow-hidden">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+												stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+												class="feather feather-briefcase mx-auto">
+												<rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+												<path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+											</svg>
+										</div>
+										<div class="ml-4 mr-auto">
+											<div class="text-theme-20 font-medium text-base mr-auto font-bold">Department</div>
+											<div class="text-md text-gray-600">Software Engineering</div>
+										</div>
+									</div>
+									<div class="flex items-center">
+										<div class="w-10 h-10 flex items-center bg-theme-17 rounded-md overflow-hidden">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+												stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+												class="feather feather-briefcase mx-auto">
+												<rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+												<path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+											</svg>
+										</div>
+										<div class="ml-4 mr-auto">
+											<div class="text-theme-20 font-medium text-base mr-auto font-bold">Division</div>
+											<div class="text-md text-gray-600">Testing</div>
+										</div>
+									</div>
+									<div class="flex items-center">
+										<div class="w-10 h-10 flex items-center bg-gray-300 text-red-500 rounded-md overflow-hidden">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+												stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+												class="feather feather-map-pin mx-auto">
+												<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+												<circle cx="12" cy="10" r="3"></circle>
+											</svg>
+										</div>
+										<div class="ml-4 mr-auto">
+											<div class="text-theme-20 font-medium text-base mr-auto font-bold">Location</div>
+											<div class="text-md text-gray-600">Lagos, Head Office</div>
+										</div>
+									</div>
+									<div class="flex items-center">
+										<div class="w-10 h-10 flex items-center bg-gray-300 rounded-md overflow-hidden">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+												stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+												class="feather feather-users mx-auto">
+												<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+												<circle cx="9" cy="7" r="4"></circle>
+												<path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+												<path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+											</svg>
+										</div>
+										<div class="ml-4 mr-auto">
+											<div class="text-theme-20 font-medium text-base mr-auto font-bold">Supervisor</div>
+											<div class="text-md text-gray-600">Johnny Jolie</div>
+										</div>
+									</div>
+									<div class="flex items-center">
+										<div class="w-10 h-10 flex items-center bg-blue-700 text-white rounded-md overflow-hidden">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+												stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+												class="feather feather-clock mx-auto">
+												<circle cx="12" cy="12" r="10"></circle>
+												<polyline points="12 6 12 12 16 14"></polyline>
+											</svg>
+										</div>
+										<div class="ml-4 mr-auto">
+											<div class="text-theme-20 font-medium text-base mr-auto font-bold">Joined since</div>
+											<div class="text-md text-gray-600">5 months ago</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-span-12 xl:col-span-7 mt-1">
+							<div class="intro-y box">
+								<div class="flex flex-col sm:flex-row items-center p-5 border-b border-gray-200">
+									<h2 class="font-medium text-base mr-auto">
+										Send A message
+									</h2>
+								</div>
+								<div class="p-5">
+									<textarea
+										class="h-24 w-full border rounded-xl overflow-hidden resize-none focus:border-blue-500 ring-1 ring-transparent focus:ring-blue-500 focus:outline-none text-black p-2 transition ease-in-out duration-300"
+										placeholder="Christ bless you! . . ."></textarea>
+									<select data-placeholder="Select your favorite actors" class="select2 w-full" multiple>
+										<option value="1" selected>Leonardo DiCaprio</option>
+										<option value="2">Johnny Deep</option>
+										<option value="3" selected>Robert Downey, Jr</option>
+										<option value="4">Samuel L. Jackson</option>
+										<option value="5">Morgan Freeman</option>
+									</select>
+									<div class="w-full sm:w-auto flex flex-end">
+										<button class="button text-white bg-theme-1 shadow-md mr-2 mt-3">Send</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-span-12 xl:col-span-5 mt-1">
+							<div class="intro-y box relative">
+								<div class="flex flex-col sm:flex-row items-center p-5 border-b border-gray-200">
+									<h2 class="font-medium text-base mr-auto">
+										Employees
+									</h2>
+									<div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
+										<div class="w-full sm:w-auto relative mr-auto mt-3 sm:mt-0 inbox-filter dropdown">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+												stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+												class="feather feather-search w-4 h-4 absolute my-auto inset-y-0 ml-3 left-0 z-10 text-gray-700">
+												<circle cx="11" cy="11" r="8"></circle>
+												<line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+											</svg>
+											<input type="text" class="input w-full sm:w-64 box px-10 text-gray-700 placeholder-theme-13"
+												placeholder="Search mail">
+											<!--  -->
+											<!-- <div class="inbox-filter__dropdown-box dropdown-box mt-10 absolute top-0 right-0 z-20" style="width: auto">
+											<div class="dropdown-box__content box p-5">
+												<div >
+													<a href="" class="flex items-center mt-2">
+														<div class="w-8 h-8 image-fit">
+															<img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-13.jpg">
+														</div>
+														<div class="ml-3">Angelina Jolie</div>
+														<div class="ml-auto w-48 truncate text-gray-600 text-xs text-right">angelinajolie@left4code.com</div>
+													</a>
+													<a href="" class="flex items-center mt-2">
+														<div class="w-8 h-8 image-fit">
+															<img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-2.jpg">
+														</div>
+														<div class="ml-3">Johnny Depp</div>
+														<div class="ml-auto w-48 truncate text-gray-600 text-xs text-right">johnnydepp@left4code.com</div>
+													</a>
+												</div>
+											</div>
+										</div> -->
+											<!--  -->
+										</div>
+									</div>
+								</div>
+								<div class="p-5" id="basic-table">
+									<div class="preview">
+										<div class="overflow-x-auto">
+											<div class="mb-5">
+												<a href="" class="flex items-center mt-2">
+													<div class="w-8 h-8 image-fit">
+														<img alt="Midone Tailwind HTML Admin Template" class="rounded-full"
+															src="dist/images/profile-13.jpg">
+													</div>
+													<div class="ml-3">Angelina Jolie</div>
+													<div class="ml-auto w-48 truncate text-gray-600 text-xs text-right">
+														angelinajolie@left4code.com
+													</div>
+												</a>
+												<a href="" class="flex items-center mt-2">
+													<div class="w-8 h-8 image-fit">
+														<img alt="Midone Tailwind HTML Admin Template" class="rounded-full"
+															src="dist/images/profile-2.jpg">
+													</div>
+													<div class="ml-3">Johnny Depp</div>
+													<div class="ml-auto w-48 truncate text-gray-600 text-xs text-right">johnnydepp@left4code.com
+													</div>
+												</a>
+												<a href="" class="flex items-center mt-2">
+													<div class="w-8 h-8 image-fit">
+														<img alt="Midone Tailwind HTML Admin Template" class="rounded-full"
+															src="dist/images/profile-14.jpg">
+													</div>
+													<div class="ml-3">Russell Crowe</div>
+													<div class="ml-auto w-48 truncate text-gray-600 text-xs text-right">russellcrowe@left4code.com
+													</div>
+												</a>
+												<a href="" class="flex items-center mt-2">
+													<div class="w-8 h-8 image-fit">
+														<img alt="Midone Tailwind HTML Admin Template" class="rounded-full"
+															src="dist/images/profile-6.jpg">
+													</div>
+													<div class="ml-3">Al Pacino</div>
+													<div class="ml-auto w-48 truncate text-gray-600 text-xs text-right">alpacino@left4code.com
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="col-span-12 xl:col-span-3 mt-1">
+							<div class="intro-y box p-5 mt-5">
+								<div class="intro-x flex flex-col mb-5 space-y-3">
+									<h2 class="text-lg font-medium truncate mr-5">
+										Quick Data
+									</h2>
+									<div class="dropdown relative mt-5 xl:mt-0">
+										<button
+											class="dropdown-toggle button font-normal border text-white relative flex items-center justify-between text-gray-700 w-full">
+											Filters<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+												fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+												stroke-linejoin="round" class="feather feather-chevron-down w-4 h-4 ml-2 self-center">
+												<polyline points="6 9 12 15 18 9"></polyline>
+											</svg> </button>
+										<div class="dropdown-box mt-10 absolute w-full top-0 xl:right-0 z-20">
+											<div class="dropdown-box__content box p-2 overflow-y-auto h-32"> <a href="javascrip:true"
+													class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md">Yearly
+													Holidays</a>
+												<a href="javascrip:true"
+													class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md">Brithdays</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="chartjs-size-monitor">
+									<div class="chartjs-size-monitor-expand">
+										<div class=""></div>
+									</div>
+									<div class="chartjs-size-monitor-shrink">
+										<div class=""></div>
+									</div>
+								</div>
+								<canvas class="mt-3 chartjs-render-monitor" id="report-donut-chart" height="170" width="183"
+									style="display: block; width: 183px; height: 170px;"></canvas>
+								<div class="mt-8">
+									<div class="flex items-center">
+										<div class="w-2 h-2 bg-theme-11 rounded-full mr-3"></div>
+										<span class="truncate">17 - 30 Years old</span>
+										<div class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"></div>
+										<span class="font-medium xl:ml-auto">62%</span>
+									</div>
+									<div class="flex items-center mt-4">
+										<div class="w-2 h-2 bg-theme-1 rounded-full mr-3"></div>
+										<span class="truncate">31 - 50 Years old</span>
+										<div class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"></div>
+										<span class="font-medium xl:ml-auto">33%</span>
+									</div>
+									<div class="flex items-center mt-4">
+										<div class="w-2 h-2 bg-theme-12 rounded-full mr-3"></div>
+										<span class="truncate">&gt;= 50 Years old</span>
+										<div class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"></div>
+										<span class="font-medium xl:ml-auto">10%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-span-12 xl:col-span-5 mt-1">
+							<div
+								class="col-span-12 md:col-span-6 xl:col-span-4 xxl:col-span-12 xl:col-start-1 xl:row-start-2 xxl:col-start-auto xxl:row-start-auto mt-3">
+								<div class="mt-5">
+									<div class="intro-x box">
+										<div class="p-5">
+											<div class="intro-x flex flex-col mb-5 space-y-3">
+												<h2 class="text-lg font-medium truncate mr-5">
+													Reports
+												</h2>
+												<div class="dropdown relative mt-5 xl:mt-0">
+													<button
+														class="dropdown-toggle button font-normal border text-white relative flex items-center justify-between text-gray-700 w-full">
+														Filters<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+															fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+															stroke-linejoin="round" class="feather feather-chevron-down w-4 h-4 ml-2 self-center">
+															<polyline points="6 9 12 15 18 9"></polyline>
+														</svg> </button>
+													<div class="dropdown-box mt-10 absolute w-full top-0 xl:right-0 z-20">
+														<div class="dropdown-box__content box p-2 overflow-y-auto h-32">
+															<a href="javascrip:true"
+																class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md">Annual
+																leave report</a>
+															<a href="javascrip:true"
+																class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md">Sick-Off
+																days</a>
+															<a href="javascrip:true"
+																class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md">Compassionate
+																leave</a>
+															<a href="javascrip:true"
+																class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md">Maternity
+																leave</a>
+															<a href="javascrip:true"
+																class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md">Missed
+																days</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="report-chart">
+												<div class="chartjs-size-monitor">
+													<div class="chartjs-size-monitor-expand">
+														<div class=""></div>
+													</div>
+													<div class="chartjs-size-monitor-shrink">
+														<div class=""></div>
+													</div>
+												</div>
+												<canvas id="report-line-chart" height="229" class="mt-6 chartjs-render-monitor"
+													style="display: block; width: 430px; height: 229px;" width="430"></canvas>
+											</div>
+										</div>
+										<div class="border-t border-gray-200 p-5">
+											<div class="flex items-center">
+												<div class="w-2 h-2 bg-theme-11 rounded-full mr-3"></div>
+												<span class="truncate">UI/UX Workshop</span>
+												<div class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"></div>
+												<span class="font-medium xl:ml-auto">23th</span>
+											</div>
+											<div class="flex items-center mt-4">
+												<div class="w-2 h-2 bg-theme-1 rounded-full mr-3"></div>
+												<span class="truncate">VueJs Frontend Development</span>
+												<div class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"></div>
+												<span class="font-medium xl:ml-auto">10th</span>
+											</div>
+											<div class="flex items-center mt-4">
+												<div class="w-2 h-2 bg-theme-12 rounded-full mr-3"></div>
+												<span class="truncate">Laravel Rest API</span>
+												<div class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"></div>
+												<span class="font-medium xl:ml-auto">31th</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-span-12 xl:col-span-4 mt-1">
+							<div
+								class="col-span-12 md:col-span-6 xl:col-span-4 xxl:col-span-12 xl:col-start-1 xl:row-start-2 xxl:col-start-auto xxl:row-start-auto mt-3">
+								<div class="mt-5">
+									<div class="intro-x box">
+										<div class="p-5">
+											<div class="intro-x flex items-center h-10 mb-5">
+												<h2 class="text-lg font-medium truncate mr-5">
+													Add & View Events
+												</h2>
+												<div
+													class="flex items-center sm:ml-auto mt-5 sm:mt-0 border-t sm:border-0 border-gray-200 pt-3 sm:pt-0 -mx-5 sm:mx-0 px-5 sm:px-0">
+													<div class="dropdown relative ml-auto sm:ml-3">
+														<a href="javascript:;" class="dropdown-toggle w-5 h-5 text-gray-500"> <svg
+																xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+																fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+																stroke-linejoin="round" class="feather feather-more-vertical w-5 h-5">
+																<circle cx="12" cy="12" r="1"></circle>
+																<circle cx="12" cy="5" r="1"></circle>
+																<circle cx="12" cy="19" r="1"></circle>
+															</svg> </a>
+														<div class="dropdown-box mt-6 absolute w-40 top-0 right-0 z-20 show">
+															<div class="dropdown-box__content box p-2">
+																<a href=""
+																	class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md">
+																	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+																		fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+																		stroke-linejoin="round" class="feather feather-settings w-4 h-4 mr-2">
+																		<circle cx="12" cy="12" r="3"></circle>
+																		<path
+																			d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+																		</path>
+																	</svg> Settings </a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="flex">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+													stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+													class="feather feather-chevron-left w-5 h-5 text-gray-600">
+													<polyline points="15 18 9 12 15 6"></polyline>
+												</svg>
+												<div class="font-medium mx-auto">April</div>
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+													stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+													class="feather feather-chevron-right w-5 h-5 text-gray-600">
+													<polyline points="9 18 15 12 9 6"></polyline>
+												</svg>
+											</div>
+											<div class="grid grid-cols-7 gap-4 mt-5 text-center">
+												<div class="font-medium">Su</div>
+												<div class="font-medium">Mo</div>
+												<div class="font-medium">Tu</div>
+												<div class="font-medium">We</div>
+												<div class="font-medium">Th</div>
+												<div class="font-medium">Fr</div>
+												<div class="font-medium">Sa</div>
+												<div class="py-1 rounded relative text-gray-600">29</div>
+												<div class="py-1 rounded relative text-gray-600">30</div>
+												<div class="py-1 rounded relative text-gray-600">31</div>
+												<div class="py-1 rounded relative">1</div>
+												<div class="py-1 rounded relative">2</div>
+												<div class="py-1 rounded relative">3</div>
+												<div class="py-1 rounded relative">4</div>
+												<div class="py-1 rounded relative">5</div>
+												<div class="py-1 bg-theme-18 rounded relative">6</div>
+												<div class="py-1 rounded relative">7</div>
+												<div class="py-1 bg-theme-1 text-white rounded relative">8</div>
+												<div class="py-1 rounded relative">9</div>
+												<div class="py-1 rounded relative">10</div>
+												<div class="py-1 rounded relative">11</div>
+												<div class="py-1 rounded relative">12</div>
+												<div class="py-1 rounded relative">13</div>
+												<div class="py-1 rounded relative">14</div>
+												<div class="py-1 rounded relative">15</div>
+												<div class="py-1 rounded relative">16</div>
+												<div class="py-1 rounded relative">17</div>
+												<div class="py-1 rounded relative">18</div>
+												<div class="py-1 rounded relative">19</div>
+												<div class="py-1 rounded relative">20</div>
+												<div class="py-1 rounded relative">21</div>
+												<div class="py-1 rounded relative">22</div>
+												<div class="py-1 bg-theme-17 rounded relative">23</div>
+												<div class="py-1 rounded relative">24</div>
+												<div class="py-1 rounded relative">25</div>
+												<div class="py-1 rounded relative">26</div>
+												<div class="py-1 bg-theme-14 rounded relative">27</div>
+												<div class="py-1 rounded relative">28</div>
+												<div class="py-1 rounded relative">29</div>
+												<div class="py-1 rounded relative">30</div>
+												<div class="py-1 rounded relative text-gray-600">1</div>
+												<div class="py-1 rounded relative text-gray-600">2</div>
+												<div class="py-1 rounded relative text-gray-600">3</div>
+												<div class="py-1 rounded relative text-gray-600">4</div>
+												<div class="py-1 rounded relative text-gray-600">5</div>
+												<div class="py-1 rounded relative text-gray-600">6</div>
+												<div class="py-1 rounded relative text-gray-600">7</div>
+												<div class="py-1 rounded relative text-gray-600">8</div>
+												<div class="py-1 rounded relative text-gray-600">9</div>
+											</div>
+										</div>
+										<div class="border-t border-gray-200 p-5">
+											<div class="flex items-center">
+												<div class="w-2 h-2 bg-theme-11 rounded-full mr-3"></div>
+												<span class="truncate">UI/UX Workshop</span>
+												<div class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"></div>
+												<span class="font-medium xl:ml-auto">23th</span>
+											</div>
+											<div class="flex items-center mt-4">
+												<div class="w-2 h-2 bg-theme-1 rounded-full mr-3"></div>
+												<span class="truncate">VueJs Frontend Development</span>
+												<div class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"></div>
+												<span class="font-medium xl:ml-auto">10th</span>
+											</div>
+											<div class="flex items-center mt-4">
+												<div class="w-2 h-2 bg-theme-12 rounded-full mr-3"></div>
+												<span class="truncate">Laravel Rest API</span>
+												<div class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"></div>
+												<span class="font-medium xl:ml-auto">31th</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-span-12 lg:col-span-8 mt-1">
+							<div class="intro-y block flex items-center justify-between h-10">
+								<h2 class="text-lg font-medium truncate mr-5 grow-[1]">
+									Application Status
+								</h2>
+								<select class="grow-[2] select2">
+									<optgroup label="Leave Application">
+										<option value="1">Annual Leave</option>
+										<option value="2">Sick Leave</option>
+										<option value="3">Study Leave</option>
+										<option value="4">Compassionate Leave</option>
+										<!-- <option value="5">Maternity Leave</option>
+										<option value="5">Time Off In Lieu (TOIL) Leave</option>
+										<option value="5">Paternity Leave</option>
+
+										<option value="5">Travel Leave</option>
+										<option value="5">Rest Leave</option> -->
+									</optgroup>
+									<optgroup label="American Actresses">
+										<option value="1">Scarlett Johansson</option>
+										<option value="2">Jessica Alba</option>
+										<option value="3">Jennifer Lawrence</option>
+										<option value="4">Emma Stone</option>
+										<option value="5">Angelina Jolie</option>
+									</optgroup>
+									<option value="1">Leave Application</option>
+								</select>
+							</div>
+							<div class="intro-y box p-5 mt-12 sm:mt-5 space-y-3">
+								<div class="grid grid-cols-12 gap-2">
+									<div class="w-full border col-span-3 relative text-gray-700">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+											stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+											class="feather feather-calendar w-4 h-4 z-10 absolute my-auto inset-y-0 ml-3 left-0">
+											<rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+											<line x1="16" y1="2" x2="16" y2="6"></line>
+											<line x1="8" y1="2" x2="8" y2="6"></line>
+											<line x1="3" y1="10" x2="21" y2="10"></line>
+										</svg>
+										<input type="text" data-daterange="true" class="datepicker input w-full box pl-10">
+									</div>
+									<div class="col-span-3">
+										<select data-placeholder="By branch" class="select2 border w-full" multiple>
+											<option value="1">Ikeja</option>
+											<option value="1">Allen</option>
+										</select>
+									</div>
+									<div class="col-span-3">
+										<select data-placeholder="By reason" class="select2 border w-full" multiple>
+											<option value="1">Seek</option>
+										</select>
+									</div>
+									<div class="col-span-3">
+										<button class="button text-white w-full bg-theme-1 shadow-md">Search</button>
+									</div>
+
+								</div>
+								<div class="overflow-x-auto">
+									<table class="table table--sm">
+										<thead>
+											<tr>
+												<th class="border-b-2 whitespace-no-wrap"><input class="input border border-gray-500"
+														type="checkbox"></th>
+												<th class="border-b-2 whitespace-no-wrap">Name</th>
+												<th class="border-b-2 whitespace-no-wrap">Date</th>
+												<th class="border-b-2 whitespace-no-wrap">Manager</th>
+												<th class="border-b-2 whitespace-no-wrap">Period</th>
+												<th class="border-b-2 whitespace-no-wrap">Reason</th>
+												<th class="border-b-2 whitespace-no-wrap">Status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="border-b"><input class="input border border-gray-500" type="checkbox"></td>
+												<td class="border-b">Angelina Jolie</td>
+												<td class="border-b">02/04/2021</td>
+												<td class="border-b">Jolie Jackson</td>
+												<td class="border-b">2 Days</td>
+												<td class="border-b">Seek</td>
+												<td class="border-b text-blue-600">Pending</td>
+											</tr>
+											<tr>
+												<td class="border-b"><input class="input border border-gray-500" type="checkbox"></td>
+												<td class="border-b">Brad Pitt</td>
+												<td class="border-b">02/05/2021</td>
+												<td class="border-b">Charlie Hunnam</td>
+												<td class="border-b">2 Days</td>
+												<td class="border-b">Seek</td>
+												<td class="border-b text-red-600">Rejected</td>
+											</tr>
+											<tr>
+												<td class="border-b"><input class="input border border-gray-500" type="checkbox"></td>
+												<td class="border-b">Natasha Wizards</td>
+												<td class="border-b">02/06/2021</td>
+												<td class="border-b">Charlie Hunnam</td>
+												<td class="border-b">2 Days</td>
+												<td class="border-b">Outside</td>
+												<td class="border-b text-green-600">Approved</td>
+											</tr>
+										</tbody>
+									</table>
+									<a href="" class="ml-auto my-4 text-theme-1 block text-right truncate">See all</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-span-12 sm:col-span-6 lg:col-span-4 mt-1 space-y-4">
+							<div class="intro-y flex items-center h-10">
+								<h2 class="text-lg font-medium truncate mr-5">
+									Birthdays & Aniversaries
+								</h2>
+								<a href="" class="ml-auto text-theme-1 truncate">See all</a>
+							</div>
+							<div class="w-full">
+								<select class="w-full select2" data-placeholder="Choose date">
+									<option value="1">Today</option>
+									<option value="1">Tommorrow</option>
+									<option value="1">Next 2 days</option>
+									<option value="1">Next 7 days</option>
+									<option value="1">Next month</option>
+								</select>
+							</div>
+
+							<div class="report-timeline relative">
+								<div class="intro-x relative flex items-center mb-3">
+									<div class="report-timeline__image">
+										<div
+											class="w-10 h-10 flex items-center image-fit rounded-full overflow-hidden bg-red-700 text-white rounded-full overflow-hidden">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+												stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+												class="feather feather-link mx-auto">
+												<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+												<path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+											</svg>
+										</div>
+									</div>
+									<div class="box px-5 py-3 ml-4 flex-1 zoom-in">
+										<div class="flex items-center">
+											<div>
+												<div class="font-medium truncate">Johnny Depp</div>
+												<div class="text-gray-600 mt-1 truncate">Software Deparment</div>
+											</div>
+											<div class="flex flex-col items-center justify-center grow-[1]">
+												<div class="text-xs text-gray-500 ml-auto">22</div>
+												<div class="text-lg text-gray-500 ml-auto">Jan</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="intro-x relative flex items-center mb-3">
+									<div class="report-timeline__image">
+										<div
+											class="w-10 h-10 flex items-center image-fit rounded-full overflow-hidden bg-blue-700 text-white rounded-full overflow-hidden">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+												stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+												class="feather feather-gift mx-auto">
+												<polyline points="20 12 20 22 4 22 4 12"></polyline>
+												<rect x="2" y="7" width="20" height="5"></rect>
+												<line x1="12" y1="22" x2="12" y2="7"></line>
+												<path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+												<path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+											</svg>
+										</div>
+									</div>
+									<div class="box px-5 py-3 ml-4 flex-1 zoom-in">
+										<div class="flex items-center">
+											<div>
+												<div class="font-medium truncate">Linda Marquee</div>
+												<div class="text-gray-600 mt-1 truncate">Acounting Deparment</div>
+											</div>
+											<div class="flex flex-col items-center justify-center grow-[1]">
+												<div class="text-xs text-gray-500 ml-auto">22</div>
+												<div class="text-lg text-gray-500 ml-auto">Jan</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="intro-x relative flex items-center mb-3">
+									<div class="report-timeline__image">
+										<div
+											class="w-10 h-10 flex items-center image-fit rounded-full overflow-hidden bg-theme-12 text-white rounded-full overflow-hidden">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+												stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+												class="feather feather-gift mx-auto">
+												<polyline points="20 12 20 22 4 22 4 12"></polyline>
+												<rect x="2" y="7" width="20" height="5"></rect>
+												<line x1="12" y1="22" x2="12" y2="7"></line>
+												<path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+												<path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+											</svg>
+										</div>
+									</div>
+									<div class="box px-5 py-3 ml-4 flex-1 zoom-in">
+										<div class="flex items-center">
+											<div>
+												<div class="font-medium truncate">Natasha Rodrigo</div>
+												<div class="text-gray-600 mt-1 truncate">Sale Deparment</div>
+											</div>
+											<div class="flex flex-col items-center justify-center grow-[1]">
+												<div class="text-xs text-gray-500 ml-auto">22</div>
+												<div class="text-lg text-gray-500 ml-auto">Jan</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="intro-x relative flex items-center mb-3">
+									<div class="report-timeline__image">
+										<div
+											class="w-10 h-10 flex items-center image-fit rounded-full overflow-hidden bg-theme-12 text-white rounded-full overflow-hidden">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+												stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+												class="feather feather-gift mx-auto">
+												<polyline points="20 12 20 22 4 22 4 12"></polyline>
+												<rect x="2" y="7" width="20" height="5"></rect>
+												<line x1="12" y1="22" x2="12" y2="7"></line>
+												<path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+												<path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+											</svg>
+										</div>
+									</div>
+									<div class="box px-5 py-3 ml-4 flex-1 zoom-in">
+										<div class="flex items-center">
+											<div>
+												<div class="font-medium truncate">Natasha Rodrigo</div>
+												<div class="text-gray-600 mt-1 truncate">Sale Deparment</div>
+											</div>
+											<div class="flex flex-col items-center justify-center grow-[1]">
+												<div class="text-xs text-gray-500 ml-auto">22</div>
+												<div class="text-lg text-gray-500 ml-auto">Jan</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-span-12 mt-1">
+							<div class="intro-y box p-5 mt-12 sm:mt-5 space-y-3">
+								<h2 class="text-lg font-medium truncate mr-5 grow-[1]">
+									Employee Search Preference
+								</h2>
+								<div class="grid grid-cols-12 gap-2">
+									<input type="text" class="input w-full border col-span-2" placeholder="Employee code">
+									<input type="text" class="input w-full border col-span-3" placeholder="Name or email address">
+									<div class="col-span-3">
+										<select data-placeholder="Department" class="select2 border w-full" multiple>
+											<option value="1">Software Engineering</option>
+											<option value="1">Account</option>
+											<option value="1">Hardware Engineering</option>
+										</select>
+									</div>
+									<div class="col-span-3">
+										<select data-placeholder="Location" class="select2 border w-full" multiple>
+											<option value="1">Lagos, Nigeria</option>
+											<option value="1">Abuja, Nigeria</option>
+										</select>
+									</div>
+									<div class="col-span-1">
+										<button class="button text-white w-full bg-theme-1 shadow-md">Search</button>
+									</div>
+								</div>
+								<div class="">
+									<table class="table table-auto">
+										<thead>
+											<tr>
+												<th class="border-b-2 whitespace-no-wrap">Name</th>
+												<th class="border-b-2 whitespace-no-wrap">Code</th>
+												<th class="border-b-2 whitespace-no-wrap">Email</th>
+												<th class="border-b-2 whitespace-no-wrap">Contact</th>
+												<th class="border-b-2 whitespace-no-wrap">Department</th>
+												<th class="border-b-2 whitespace-no-wrap">Location</th>
+												<th class="border-b-2 whitespace-no-wrap">Status</th>
+												<th class="border-b-2 whitespace-no-wrap"></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="border-b">Samuel L. Jackson</td>
+												<td class="border-b">AD-#023021</td>
+												<td class="border-b">samule.l.jackson@gmail.com</td>
+												<td class="border-b"><a href="tel:0812345078">0812305678</a></td>
+												<td class="border-b">Sale</td>
+												<td class="border-b">Abuja, Nigeria</td>
+												<td class="border-b text-green-600">On leave</td>
+												<td class="border-b relative">
+													<div class="flex flex-row justify-between">
+														<p class="text-blue-600 underline truncate mr-2"><a href="javascript:void">Edit</a></p>
+														<div class="dropdown mt-5 xl:mt-0">
+															<button
+																class="dropdown-toggle font-normal outline-none text-white flex items-center justify-between text-gray-700 w-full">
+																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+																	fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+																	stroke-linejoin="round" class="feather feather-chevron-down w-4 h-4 ml-2 self-center">
+																	<polyline points="6 9 12 15 18 9"></polyline>
+																</svg> </button>
+															<!-- <div class="dropdown-box mt-10 absolute w-full min-w-[210px] top-0 xl:right-0 z-20 show">
+																<div class="dropdown-box__content box p-2 overflow-y-auto">
+																	<a href="javascrip:true"
+																		class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md">Request
+																		Leave</a>
+																	<a href="javascrip:true"
+																		class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md">Apply
+																		for loan</a>
+																</div>
+															</div> -->
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="border-b">Angelina Jolie</td>
+												<td class="border-b">AD-#022021</td>
+												<td class="border-b">angelina.jolie@gmail.com</td>
+												<td class="border-b"><a href="tel:0812345678">0812345678</a></td>
+												<td class="border-b">Engineering</td>
+												<td class="border-b">Abuja, Nigeria</td>
+												<td class="border-b text-green-600">Active</td>
+												<td class="border-b relative">
+													<div class="flex flex-row justify-between">
+														<p class="text-blue-600 underline truncate mr-2"><a href="javascript:void">Edit</a></p>
+														<div class="dropdown mt-5 xl:mt-0">
+															<button
+																class="dropdown-toggle font-normal outline-none text-white flex items-center justify-between text-gray-700 w-full">
+																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+																	fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+																	stroke-linejoin="round" class="feather feather-chevron-down w-4 h-4 ml-2 self-center">
+																	<polyline points="6 9 12 15 18 9"></polyline>
+																</svg> </button>
+															<!-- <div class="dropdown-box mt-10 absolute w-full min-w-[210px] top-0 xl:right-0 z-20 show">
+																<div class="dropdown-box__content box p-2 overflow-y-auto">
+																	<a href="javascrip:true"
+																		class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md">Request
+																		Leave</a>
+																	<a href="javascrip:true"
+																		class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md">Apply
+																		for loan</a>
+																</div>
+															</div> -->
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+											</tr>
+										</tbody>
+									</table>
+									<a href="javascript:void" class="ml-auto my-4 text-theme-1 block text-right truncate">See all</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- END: Content -->
+		</div>
+		<!-- BEGIN: JS Assets-->
+		<script
+			src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=[" your-google-map-api"]&libraries=places"></script>
+		<script src="dist/js/app.js"></script>
+		<!-- END: JS Assets-->
+</body>
+
+</html>

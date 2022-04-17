@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<!--
+Template Name: Midone - HTML Admin Dashboard Template
+Author: Left4code
+Website: http://www.left4code.com/
+Contact: muhammadrizki@left4code.com
+Purchase: https://themeforest.net/user/left4code/portfolio
+Renew Support: https://themeforest.net/user/left4code/portfolio
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<html lang="en">
+<!-- BEGIN: Head -->
+
+<head>
+	<meta charset="utf-8">
+	<link href="dist/images/logo.svg" rel="shortcut icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description"
+		content="Midone admin is super flexible, powerful, clean & modern responsive tailwind admin template with unlimited possibilities.">
+	<meta name="keywords"
+		content="admin template, Midone admin template, dashboard template, flat admin template, responsive admin template, web app">
+	<meta name="author" content="LEFT4CODE">
+	<title>Dashboard</title>
+	<!-- BEGIN: CSS Assets-->
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="dist/css/app.css" />
+	<!-- END: CSS Assets-->
+</head>
+<!-- END: Head -->
+
+<body class="app">
+	<!-- BEGIN: Mobile Menu -->
+	<div class="mobile-menu md:hidden">
+		<div class="mobile-menu-bar">
+			<a href="" class="flex mr-auto">
+				<img alt="Midone" class="w-6" src="dist/images/logo.svg">
+			</a>
+			<a href="javascript:;" id="mobile-menu-toggler"> <i data-feather="bar-chart-2"
+					class="w-8 h-8 text-white transform -rotate-90"></i> </a>
+		</div>
+		<ul class="border-t border-theme-24 py-5 hidden">
+			<li>
+				<a href="index.html" class="menu menu--active">
+					<div class="menu__icon"> <i data-feather="home"></i> </div>
+					<div class="menu__title"> Dashboard </div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- END: Mobile Menu -->
+	<div class="flex">
+		<!-- BEGIN: Side Menu -->
+		<nav class="side-nav">
+			<a href="" class="intro-x flex items-center pl-5 pt-4">
+				<img alt="Midone Tailwind HTML Admin Template" class="w-6" src="dist/images/logo.svg">
+				<span class="hidden xl:block text-white text-lg ml-3"> Hri<span class="font-medium">s</span> </span>
+			</a>
+			<div class="side-nav__devider my-6"></div>
+			<ul>
+				<li>
+					<a href="index.html" class="side-menu">
+						<div class="side-menu__icon"> <i data-feather="home"></i> </div>
+						<div class="side-menu__title"> Dashboard </div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="side-menu">
+						<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round" class="feather feather-box">
+								<path
+									d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+								</path>
+								<polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+								<line x1="12" y1="22.08" x2="12" y2="12"></line>
+							</svg> </div>
+						<div class="side-menu__title"> Employees <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round" class="feather feather-chevron-down side-menu__sub-icon">
+								<polyline points="6 9 12 15 18 9"></polyline>
+							</svg> </div>
+					</a>
+					<ul class="" style="display: none;">
+						<li>
+							<a href="./employees.html" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title"> All Employees</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title">Add Employees</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title">Employees Contract Update</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title">Job Management</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title">Employee Settings</div>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="side-menu">
+						<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round" class="feather feather-sliders mx-auto">
+								<line x1="4" y1="21" x2="4" y2="14"></line>
+								<line x1="4" y1="10" x2="4" y2="3"></line>
+								<line x1="12" y1="21" x2="12" y2="12"></line>
+								<line x1="12" y1="8" x2="12" y2="3"></line>
+								<line x1="20" y1="21" x2="20" y2="16"></line>
+								<line x1="20" y1="12" x2="20" y2="3"></line>
+								<line x1="1" y1="14" x2="7" y2="14"></line>
+								<line x1="9" y1="8" x2="15" y2="8"></line>
+								<line x1="17" y1="16" x2="23" y2="16"></line>
+							</svg> </div>
+						<div class="side-menu__title"> Requests <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round" class="feather feather-chevron-down side-menu__sub-icon">
+								<polyline points="6 9 12 15 18 9"></polyline>
+							</svg> </div>
+					</a>
+					<ul class="" style="display: none;">
+						<li>
+							<a href="./employees.html" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title"> Leave</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title">Loan</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title">Redeployment</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title">Reevaluation</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title">Exit</div>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="side-menu">
+						<div class="side-menu__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round" class="feather feather-clock mx-auto">
+								<circle cx="12" cy="12" r="10"></circle>
+								<polyline points="12 6 12 12 16 14"></polyline>
+							</svg> </div>
+						<div class="side-menu__title"> Time & Attendence <svg xmlns="http://www.w3.org/2000/svg" width="24"
+								height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+								stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down side-menu__sub-icon">
+								<polyline points="6 9 12 15 18 9"></polyline>
+							</svg> </div>
+					</a>
+					<ul class="" style="display: none;">
+						<li>
+							<a href="#" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title"> Absence</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title">Late</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title">Clock-In</div>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="side-menu">
+						<div class="side-menu__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round" class="feather feather-calendar mx-auto">
+								<rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+								<line x1="16" y1="2" x2="16" y2="6"></line>
+								<line x1="8" y1="2" x2="8" y2="6"></line>
+								<line x1="3" y1="10" x2="21" y2="10"></line>
+							</svg> </div>
+						<div class="side-menu__title"> Tasks <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round" class="feather feather-chevron-down side-menu__sub-icon">
+								<polyline points="6 9 12 15 18 9"></polyline>
+							</svg> </div>
+					</a>
+					<ul class="" style="display: none;">
+						<li>
+							<a href="#" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title"> All Tasks</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title"> Create Tasks</div>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="side-menu side-menu--active">
+						<div class="side-menu__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round" class="feather feather-credit-card mx-auto">
+								<rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+								<line x1="1" y1="10" x2="23" y2="10"></line>
+							</svg></div>
+						<div class="side-menu__title"> Payrolls <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round" class="feather feather-chevron-down side-menu__sub-icon">
+								<polyline points="6 9 12 15 18 9"></polyline>
+							</svg> </div>
+					</a>
+					<ul class="" style="display: none;">
+						<li>
+							<a href="./payroll.html" class="side-menu side-menu--active">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title"> All Payrolls</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title"> Create Payroll</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="side-menu">
+								<div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-activity">
+										<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+									</svg> </div>
+								<div class="side-menu__title"> Settings</div>
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- END: Side Menu -->
+		<!-- BEGIN: Content -->
+		<div class="content">
+			<!-- BEGIN: Top Bar -->
+			<div class="top-bar">
+				<!-- BEGIN: Breadcrumb -->
+				<div class="-intro-x breadcrumb mr-auto hidden sm:flex"> <a href="" class="">Application</a> <i
+						data-feather="chevron-right" class="breadcrumb__icon"></i> <a href="">Dashboard</a> <i
+						data-feather="chevron-right" class="breadcrumb__icon"></i> <a href="" class="breadcrumb--active">All
+						Payrolls</a> </div>
+				<!-- END: Breadcrumb -->
+
+				<!-- BEGIN: Notifications -->
+				<div class="intro-x dropdown relative mr-auto sm:mr-6">
+					<div class="dropdown-toggle notification notification--bullet cursor-pointer"> <i data-feather="bell"
+							class="notification__icon"></i> </div>
+					<div
+						class="notification-content dropdown-box mt-8 absolute top-0 left-0 sm:left-auto sm:right-0 z-20 -ml-10 sm:ml-0">
+						<div class="notification-content__box dropdown-box__content box">
+							<div class="notification-content__title">Notifications</div>
+							<div class="cursor-pointer relative flex items-center ">
+								<div class="w-12 h-12 flex-none image-fit mr-1">
+									<img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-13.jpg">
+									<div class="w-3 h-3 bg-theme-9 absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+								</div>
+								<div class="ml-2 overflow-hidden">
+									<div class="flex items-center">
+										<a href="javascript:;" class="font-medium truncate mr-5">Angelina Jolie</a>
+										<div class="text-xs text-gray-500 ml-auto whitespace-no-wrap">05:09 AM</div>
+									</div>
+									<div class="w-full truncate text-gray-600">Contrary to popular belief, Lorem Ipsum is not simply
+										random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 20
+									</div>
+								</div>
+							</div>
+							<div class="cursor-pointer relative flex items-center mt-5">
+								<div class="w-12 h-12 flex-none image-fit mr-1">
+									<img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-2.jpg">
+									<div class="w-3 h-3 bg-theme-9 absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+								</div>
+								<div class="ml-2 overflow-hidden">
+									<div class="flex items-center">
+										<a href="javascript:;" class="font-medium truncate mr-5">Johnny Depp</a>
+										<div class="text-xs text-gray-500 ml-auto whitespace-no-wrap">05:09 AM</div>
+									</div>
+									<div class="w-full truncate text-gray-600">It is a long established fact that a reader will be
+										distracted by the readable content of a page when looking at its layout. The point of using Lorem
+									</div>
+								</div>
+							</div>
+							<div class="cursor-pointer relative flex items-center mt-5">
+								<div class="w-12 h-12 flex-none image-fit mr-1">
+									<img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-14.jpg">
+									<div class="w-3 h-3 bg-theme-9 absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+								</div>
+								<div class="ml-2 overflow-hidden">
+									<div class="flex items-center">
+										<a href="javascript:;" class="font-medium truncate mr-5">Russell Crowe</a>
+										<div class="text-xs text-gray-500 ml-auto whitespace-no-wrap">01:10 PM</div>
+									</div>
+									<div class="w-full truncate text-gray-600">Contrary to popular belief, Lorem Ipsum is not simply
+										random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 20
+									</div>
+								</div>
+							</div>
+							<div class="cursor-pointer relative flex items-center mt-5">
+								<div class="w-12 h-12 flex-none image-fit mr-1">
+									<img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-6.jpg">
+									<div class="w-3 h-3 bg-theme-9 absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+								</div>
+								<div class="ml-2 overflow-hidden">
+									<div class="flex items-center">
+										<a href="javascript:;" class="font-medium truncate mr-5">Al Pacino</a>
+										<div class="text-xs text-gray-500 ml-auto whitespace-no-wrap">05:09 AM</div>
+									</div>
+									<div class="w-full truncate text-gray-600">There are many variations of passages of Lorem Ipsum
+										available, but the majority have suffered alteration in some form, by injected humour, or randomi
+									</div>
+								</div>
+							</div>
+							<div class="cursor-pointer relative flex items-center mt-5">
+								<div class="w-12 h-12 flex-none image-fit mr-1">
+									<img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-5.jpg">
+									<div class="w-3 h-3 bg-theme-9 absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+								</div>
+								<div class="ml-2 overflow-hidden">
+									<div class="flex items-center">
+										<a href="javascript:;" class="font-medium truncate mr-5">Edward Norton</a>
+										<div class="text-xs text-gray-500 ml-auto whitespace-no-wrap">01:10 PM</div>
+									</div>
+									<div class="w-full truncate text-gray-600">Lorem Ipsum is simply dummy text of the printing and
+										typesetting industry. Lorem Ipsum has been the industry&#039;s standard dummy text ever since the
+										1500</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END: Notifications -->
+				<!-- BEGIN: Account Menu -->
+				<div class="intro-x dropdown w-8 h-8 relative">
+					<div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in">
+						<img alt="Midone Tailwind HTML Admin Template" src="dist/images/profile-12.jpg">
+					</div>
+					<div class="dropdown-box mt-10 absolute w-56 top-0 right-0 z-20">
+						<div class="dropdown-box__content box bg-theme-38 text-white">
+							<div class="p-4 border-b border-theme-40">
+								<div class="font-medium">Angelina Jolie</div>
+								<div class="text-xs text-theme-41">Software Engineer</div>
+							</div>
+							<div class="p-2">
+								<a href=""
+									class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md">
+									<i data-feather="user" class="w-4 h-4 mr-2"></i> Profile </a>
+								<a href=""
+									class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md">
+									<i data-feather="edit" class="w-4 h-4 mr-2"></i> Add Account </a>
+								<a href=""
+									class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md">
+									<i data-feather="lock" class="w-4 h-4 mr-2"></i> Reset Password </a>
+								<a href=""
+									class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md">
+									<i data-feather="help-circle" class="w-4 h-4 mr-2"></i> Help </a>
+							</div>
+							<div class="p-2 border-t border-theme-40">
+								<a href=""
+									class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md">
+									<i data-feather="toggle-right" class="w-4 h-4 mr-2"></i> Logout </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END: Account Menu -->
+			</div>
+			<!-- END: Top Bar -->
+			<div class="grid grid-cols-12 gap-2">
+				<div class="col-span-12 grid grid-cols-12 gap-2">
+					<div class="col-span-12 mt-8">
+						<div class="intro-y flex items-center h-10">
+							<h2 class="text-lg font-medium truncate mr-5">
+								Active Payrolls
+							</h2>
+							<a href="" class="ml-auto flex text-theme-1"> <svg xmlns="http://www.w3.org/2000/svg" width="24"
+									height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+									stroke-linecap="round" stroke-linejoin="round" class="feather feather-refresh-ccw w-4 h-4 mr-3">
+									<polyline points="1 4 1 10 7 10"></polyline>
+									<polyline points="23 20 23 14 17 14"></polyline>
+									<path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path>
+								</svg> Reload Data </a>
+						</div>
+						<div class="grid grid-cols-12 gap-6 mt-5">
+							<div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+								<div class="report-box zoom-in">
+									<div class="box p-5">
+										<div class="text-3xl font-bold text-center leading-8 mt-6 truncate">4,510</div>
+										<div class="text-base text-gray-600 mt-3 text-center truncate">Total Employees</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+								<div class="report-box zoom-in">
+									<div class="box p-5">
+										<div class="text-3xl font-bold text-center leading-8 mt-6 truncate">24</div>
+										<div class="text-base text-gray-600 mt-3 text-center truncate">On Leave</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+								<div class="report-box zoom-in">
+									<div class="box p-5">
+										<div class="text-3xl font-bold text-center leading-8 mt-6 truncate">26<span
+												class="text-sm text-gray-400"> yrs</span></div>
+										<div class="text-base text-gray-600 mt-3 text-center truncate">Employees Average Age</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+								<div class="report-box zoom-in">
+									<div class="box p-5">
+										<div class="text-3xl font-bold text-center leading-8 mt-6 truncate">08</div>
+										<div class="text-base text-gray-600 mt-3 text-center truncate">New joiners</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-span-12 mt-6">
+					<div class="intro-y block sm:flex items-center h-10">
+						<h2 class="text-lg font-medium truncate mr-5">
+							Recent Payrolls
+						</h2>
+						<div class="flex items-center sm:ml-auto mt-3 sm:mt-0">
+							<button class="button box flex items-center text-gray-700"> <svg xmlns="http://www.w3.org/2000/svg"
+									width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+									stroke-linecap="round" stroke-linejoin="round"
+									class="feather feather-file-text hidden sm:block w-4 h-4 mr-2">
+									<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+									<polyline points="14 2 14 8 20 8"></polyline>
+									<line x1="16" y1="13" x2="8" y2="13"></line>
+									<line x1="16" y1="17" x2="8" y2="17"></line>
+									<polyline points="10 9 9 9 8 9"></polyline>
+								</svg> Export to Excel </button>
+							<button class="ml-3 button box flex items-center text-gray-700"> <svg xmlns="http://www.w3.org/2000/svg"
+									width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+									stroke-linecap="round" stroke-linejoin="round"
+									class="feather feather-file-text hidden sm:block w-4 h-4 mr-2">
+									<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+									<polyline points="14 2 14 8 20 8"></polyline>
+									<line x1="16" y1="13" x2="8" y2="13"></line>
+									<line x1="16" y1="17" x2="8" y2="17"></line>
+									<polyline points="10 9 9 9 8 9"></polyline>
+								</svg> Export to PDF </button>
+							<div class="ml-3 flex items-center">
+								<div class="mr-3 font-medium">Advance Filter</div>
+								<input data-target="#input-groups" class="show-code input input--switch border" type="checkbox">
+							</div>
+						</div>
+					</div>
+					<div class="intro-y overflow-auto mt-8 sm:mt-0">
+						<table class="table table-report sm:mt-2">
+							<thead>
+								<tr>
+									<th class="whitespace-no-wrap">Pay circle</th>
+									<th class="whitespace-no-wrap">Payment Date</th>
+									<th class="whitespace-no-wrap">Due Date</th>
+									<th class="whitespace-no-wrap"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="intro-x">
+									<td class="w-40">
+										<div class="flex items-center">
+											<div class="ml-4 mr-auto">
+												<div class="truncate font-medium">May 3 - 15</div>
+												<div class="text-gray-600 text-xs truncate">All employees</div>
+											</div>
+										</div>
+									</td>
+									<td class="truncate">December 15</td>
+									<td>
+										<a href="" class="whitespace-no-wrap truncate">August 12</a>
+									</td>
+									<td class="table-report__action w-56">
+										<div class="flex justify-center items-center">
+											<a class="flex items-center mr-3" href=""> <svg xmlns="http://www.w3.org/2000/svg" width="24"
+													height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+													stroke-linecap="round" stroke-linejoin="round"
+													class="feather feather-check-square w-4 h-4 mr-1">
+													<polyline points="9 11 12 14 22 4"></polyline>
+													<path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+												</svg> Edit </a>
+											<a class="flex items-center text-theme-6" href=""> <svg xmlns="http://www.w3.org/2000/svg"
+													width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+													stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+													class="feather feather-trash-2 w-4 h-4 mr-1">
+													<polyline points="3 6 5 6 21 6"></polyline>
+													<path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+													</path>
+													<line x1="10" y1="11" x2="10" y2="17"></line>
+													<line x1="14" y1="11" x2="14" y2="17"></line>
+												</svg> Delete </a>
+										</div>
+									</td>
+								</tr>
+								<tr class="intro-x">
+									<td class="w-40">
+										<div class="flex items-center">
+											<div class="ml-4 mr-auto">
+												<div class="truncate font-medium">June 2 - 24</div>
+												<div class="text-gray-600 text-xs truncate">All employees</div>
+											</div>
+										</div>
+									</td>
+									<td class="truncate">August 15</td>
+									<td>
+										<a href="" class="whitespace-no-wrap truncate">December 12</a>
+									</td>
+									<td class="table-report__action w-56">
+										<div class="flex justify-center items-center">
+											<a class="flex items-center mr-3" href=""> <svg xmlns="http://www.w3.org/2000/svg" width="24"
+													height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+													stroke-linecap="round" stroke-linejoin="round"
+													class="feather feather-check-square w-4 h-4 mr-1">
+													<polyline points="9 11 12 14 22 4"></polyline>
+													<path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+												</svg> Edit </a>
+											<a class="flex items-center text-theme-6" href=""> <svg xmlns="http://www.w3.org/2000/svg"
+													width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+													stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+													class="feather feather-trash-2 w-4 h-4 mr-1">
+													<polyline points="3 6 5 6 21 6"></polyline>
+													<path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+													</path>
+													<line x1="10" y1="11" x2="10" y2="17"></line>
+													<line x1="14" y1="11" x2="14" y2="17"></line>
+												</svg> Delete </a>
+										</div>
+									</td>
+								</tr>
+								<tr class="intro-x">
+									<td class="w-40">
+										<div class="flex items-center">
+											<div class="ml-4 mr-auto">
+												<div class="truncate font-medium">May 3 - 15</div>
+												<div class="text-gray-600 text-xs truncate">All employees</div>
+											</div>
+										</div>
+									</td>
+									<td class="truncate">December 15</td>
+									<td>
+										<a href="" class="whitespace-no-wrap truncate">August 12</a>
+									</td>
+									<td class="table-report__action w-56">
+										<div class="flex justify-center items-center">
+											<a class="flex items-center mr-3" href=""> <svg xmlns="http://www.w3.org/2000/svg" width="24"
+													height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+													stroke-linecap="round" stroke-linejoin="round"
+													class="feather feather-check-square w-4 h-4 mr-1">
+													<polyline points="9 11 12 14 22 4"></polyline>
+													<path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+												</svg> Edit </a>
+											<a class="flex items-center text-theme-6" href=""> <svg xmlns="http://www.w3.org/2000/svg"
+													width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+													stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+													class="feather feather-trash-2 w-4 h-4 mr-1">
+													<polyline points="3 6 5 6 21 6"></polyline>
+													<path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+													</path>
+													<line x1="10" y1="11" x2="10" y2="17"></line>
+													<line x1="14" y1="11" x2="14" y2="17"></line>
+												</svg> Delete </a>
+										</div>
+									</td>
+								</tr>
+								<tr class="intro-x">
+									<td class="w-40">
+										<div class="flex items-center">
+											<div class="ml-4 mr-auto">
+												<div class="truncate font-medium">January 5 - 27</div>
+												<div class="text-gray-600 text-xs truncate">All employees</div>
+											</div>
+										</div>
+									</td>
+									<td class="truncate">Febuary 15</td>
+									<td>
+										<a href="" class="whitespace-no-wrap truncate">November 12</a>
+									</td>
+									<td class="table-report__action w-56">
+										<div class="flex justify-center items-center">
+											<a class="flex items-center mr-3" href=""> <svg xmlns="http://www.w3.org/2000/svg" width="24"
+													height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+													stroke-linecap="round" stroke-linejoin="round"
+													class="feather feather-check-square w-4 h-4 mr-1">
+													<polyline points="9 11 12 14 22 4"></polyline>
+													<path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+												</svg> Edit </a>
+											<a class="flex items-center text-theme-6" href=""> <svg xmlns="http://www.w3.org/2000/svg"
+													width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+													stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+													class="feather feather-trash-2 w-4 h-4 mr-1">
+													<polyline points="3 6 5 6 21 6"></polyline>
+													<path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+													</path>
+													<line x1="10" y1="11" x2="10" y2="17"></line>
+													<line x1="14" y1="11" x2="14" y2="17"></line>
+												</svg> Delete </a>
+										</div>
+									</td>
+								</tr>
+								<tr class="intro-x">
+									<td class="w-40">
+										<div class="flex items-center">
+											<div class="ml-4 mr-auto">
+												<div class="truncate font-medium">May 3 - 15</div>
+												<div class="text-gray-600 text-xs truncate">All employees</div>
+											</div>
+										</div>
+									</td>
+									<td class="truncate">December 15</td>
+									<td>
+										<a href="" class="whitespace-no-wrap truncate">August 12</a>
+									</td>
+									<td class="table-report__action w-56">
+										<div class="flex justify-center items-center">
+											<a class="flex items-center mr-3" href=""> <svg xmlns="http://www.w3.org/2000/svg" width="24"
+													height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+													stroke-linecap="round" stroke-linejoin="round"
+													class="feather feather-check-square w-4 h-4 mr-1">
+													<polyline points="9 11 12 14 22 4"></polyline>
+													<path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+												</svg> Edit </a>
+											<a class="flex items-center text-theme-6" href=""> <svg xmlns="http://www.w3.org/2000/svg"
+													width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+													stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+													class="feather feather-trash-2 w-4 h-4 mr-1">
+													<polyline points="3 6 5 6 21 6"></polyline>
+													<path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+													</path>
+													<line x1="10" y1="11" x2="10" y2="17"></line>
+													<line x1="14" y1="11" x2="14" y2="17"></line>
+												</svg> Delete </a>
+										</div>
+									</td>
+								</tr>
+								<tr class="intro-x">
+									<td class="w-40">
+										<div class="flex items-center">
+											<div class="ml-4 mr-auto">
+												<div class="truncate font-medium">May 3 - 15</div>
+												<div class="text-gray-600 text-xs truncate">All employees</div>
+											</div>
+										</div>
+									</td>
+									<td class="truncate">December 15</td>
+									<td>
+										<a href="" class="whitespace-no-wrap truncate">August 12</a>
+									</td>
+									<td class="table-report__action w-56">
+										<div class="flex justify-center items-center">
+											<a class="flex items-center mr-3" href=""> <svg xmlns="http://www.w3.org/2000/svg" width="24"
+													height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+													stroke-linecap="round" stroke-linejoin="round"
+													class="feather feather-check-square w-4 h-4 mr-1">
+													<polyline points="9 11 12 14 22 4"></polyline>
+													<path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+												</svg> Edit </a>
+											<a class="flex items-center text-theme-6" href=""> <svg xmlns="http://www.w3.org/2000/svg"
+													width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+													stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+													class="feather feather-trash-2 w-4 h-4 mr-1">
+													<polyline points="3 6 5 6 21 6"></polyline>
+													<path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+													</path>
+													<line x1="10" y1="11" x2="10" y2="17"></line>
+													<line x1="14" y1="11" x2="14" y2="17"></line>
+												</svg> Delete </a>
+										</div>
+									</td>
+								</tr>
+								<tr class="intro-x">
+									<td class="w-40">
+										<div class="flex items-center">
+											<div class="ml-4 mr-auto">
+												<div class="truncate font-medium">May 3 - 15</div>
+												<div class="text-gray-600 text-xs truncate">All employees</div>
+											</div>
+										</div>
+									</td>
+									<td class="truncate">December 15</td>
+									<td>
+										<a href="" class="whitespace-no-wrap truncate">August 12</a>
+									</td>
+									<td class="table-report__action w-56">
+										<div class="flex justify-center items-center">
+											<a class="flex items-center mr-3" href=""> <svg xmlns="http://www.w3.org/2000/svg" width="24"
+													height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+													stroke-linecap="round" stroke-linejoin="round"
+													class="feather feather-check-square w-4 h-4 mr-1">
+													<polyline points="9 11 12 14 22 4"></polyline>
+													<path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+												</svg> Edit </a>
+											<a class="flex items-center text-theme-6" href=""> <svg xmlns="http://www.w3.org/2000/svg"
+													width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+													stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+													class="feather feather-trash-2 w-4 h-4 mr-1">
+													<polyline points="3 6 5 6 21 6"></polyline>
+													<path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+													</path>
+													<line x1="10" y1="11" x2="10" y2="17"></line>
+													<line x1="14" y1="11" x2="14" y2="17"></line>
+												</svg> Delete </a>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="intro-y flex flex-wrap sm:flex-row sm:flex-no-wrap items-center mt-3">
+						<ul class="pagination">
+							<li>
+								<a class="pagination__link" href=""> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-chevrons-left w-4 h-4">
+										<polyline points="11 17 6 12 11 7"></polyline>
+										<polyline points="18 17 13 12 18 7"></polyline>
+									</svg> </a>
+							</li>
+							<li>
+								<a class="pagination__link" href=""> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-chevron-left w-4 h-4">
+										<polyline points="15 18 9 12 15 6"></polyline>
+									</svg> </a>
+							</li>
+							<li> <a class="pagination__link" href="">...</a> </li>
+							<li> <a class="pagination__link" href="">1</a> </li>
+							<li> <a class="pagination__link pagination__link--active" href="">2</a> </li>
+							<li> <a class="pagination__link" href="">3</a> </li>
+							<li> <a class="pagination__link" href="">...</a> </li>
+							<li>
+								<a class="pagination__link" href=""> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-chevron-right w-4 h-4">
+										<polyline points="9 18 15 12 9 6"></polyline>
+									</svg> </a>
+							</li>
+							<li>
+								<a class="pagination__link" href=""> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-chevrons-right w-4 h-4">
+										<polyline points="13 17 18 12 13 7"></polyline>
+										<polyline points="6 17 11 12 6 7"></polyline>
+									</svg> </a>
+							</li>
+						</ul>
+						<select class="w-20 input box mt-3 sm:mt-0">
+							<option>10</option>
+							<option>25</option>
+							<option>35</option>
+							<option>50</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<!-- END: Content -->
+		</div>
+		<!-- BEGIN: JS Assets-->
+		<script
+			src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=[" your-google-map-api"]&libraries=places"></script>
+		<script src="dist/js/app.js"></script>
+		<!-- END: JS Assets-->
+</body>
+
+</html>
